@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <title>Contact</title>
+<style>
+    h1{text-align: center;font-family: sans-serif; font-size: 55px; font-style: normal; color:#333;}
+    h2{text-align: center;font-family: 'Caveat'; font-size: 55px; font-style: normal; color:#333;}
+    p{text-align: left; font-family:Kalam; font-size:15pt; text-indent:20px; margin-left: 30%; margin-right:30%}
+    body {background-image: url("contactbackground.jpeg");}
+    .submit{text-align: center}
+    .moviename {font-style:italic;}
+    .survey{background-color: rgba(255, 255, 255, 0.767);}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 33.5%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color:white; 
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family:inherit;
+    margin:0;
+}
+
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color:#333; 
+    text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+</style>
+
+</head>
+<body>
+    <h1 style="line-height:5px; padding-top:20px;"> Contact Me </h1>
+<br>
+    <div class="navbar">
+        <a href="index.htm">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Comedy <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="comedy.htm">Overview</a>
+                <a href="comedy1.htm"><span class="moviename">The Steamboat Bill Jr.,</span></a>
+                <a href="comedy2.htm"><span class="moviename">The Sherlock Jr.,</span></a>
+                <a href="comedy3.htm"><span class="moviename">City Lights</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Romance <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="romance.htm">Overview</a>
+                <a href="romance1.htm"><span class="moviename">One Day</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Animated Movies <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="animated.htm">Overview</a>
+                <a href="animated1.htm"><span class="moviename">Coco</span></a>
+                <a href="animated2.htm"><span class="moviename">Boss Baby</span></a>
+            </div>
+        </div>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Me</a>
+    </div>
+        <h2>Do you have any questions?</h2>	
+        <p>Contact me via xchen2@babson.edu.</p>
+    <hr>
+<div class="survey">
+    <br>
+    <p>Please complete the following survey. </p>
+    <p>When you are done, please click on the Submit button.</p>
+    <form action="http://wtspring13sec2.babson.edu/gordon/mailer.php" method="post">
+    <br>
+        <p>First Name:
+            <input type="text" name="firstname" maxlength="100" />
+            Last Name:
+            <input type="text" name="lastname" maxlength="100" />
+        </p>
+        <p>Email:
+            <input type="text" name="email" id="email"></p>
+        <p>Gender:
+            Male<input type="radio" name="gender" value="male" />
+            Female<input type="radio" name="gender" value="female" />
+        </p>
+        <p>Which type of moves you like the most?
+            <select name="Favorite_Movie">
+                <option value="Comedy">Comedy</option>
+                <option value="Romance">Romance</option>   
+                <option value="Animated Film">Animated Film</option>   
+            </select>
+        </p>
+        <p> Which movies do you find to be fun? <br/>
+            <input type="checkbox" name="The Steamboat Bill Jr.," value="Fun_Movie" /> The Steamboat Bill Jr., <br/>
+            <input type="checkbox" name="The Sherlock Jr.," value="Fun_Movie" /> The Sherlock Jr., <br/>
+            <input type="checkbox" name="City Lights" value="Fun_Movie" /> City Lights <br/>
+            <input type="checkbox" name="One Day" value="Fun_Movie" /> One Day <br/>
+            <input type="checkbox" name="Coco" value="Fun_Movie" /> Coco <br/>
+            <input type="checkbox" name="Baby Boss" value="Fun_Movie" /> Baby Boss <br/>
+        </p>
+        <p> Please add any comments you have <br>
+            <textarea name="comments" rows="10" cols="70">
+            </textarea>
+        </p>
+        <p class="submit">
+        <input type="submit" value="Submit" name="Submit" />
+        <input type="reset" value="Reset" name="Reset" />
+        </p>
+    </form>
+</div>
+
+    
+
+</body>
+</html>
