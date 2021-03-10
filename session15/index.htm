@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{background-color:lavender;}
+        h1{text-align:center; font-family:'monaco'; font-size:36pt; border-style: dashed;border-color:black;padding-left:1%;}
+        p{font-family:verdana; font-size:12pt; text-indent:20px;padding-left:1%;}
+        hr{width:70%; color:steelblue; height:3px; background-color:steelblue; border:steelblue}
+        .redbord {border:3px solid blue}
+    </style>
+
+<script>
+
+    var colorsList=new Array("red", "orange", "yellow", "green", "blue", "indigo","violet")
+    var counter=0
+    function changecolor()
+    {
+      document.getElementById("header").style.color=colorsList[counter]
+      counter=counter+1
+      if(counter==colorsList.length)
+      {
+        counter=0
+      }
+      setTimeout("changecolor()",500)
+    }
+  
+</script>
+    </head>
+  
+    <body onload="changecolor()">
+<h1 id="header" class=redbord>All About Xingyu</h1>
+
+    <hr>
+<img src="myself.jpeg" alt="My Picture" width="250"/>
+    
+<p>I am from Taiyuan, China.</p>
+
+<p>The best way to contact me is via email 
+    <b>xchen2@babson.edu</b>.
+<br>
+<p>I love reading and watching movies.</p>   
+    
+<a href="interests.htm">My interests</a>
+</body>
+</html>
