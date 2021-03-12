@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+	<style>
+        canvas { border: 1px solid black; }
+    </style>
+    
+    <script>
+        function draw(){
+    var canvas = document.getElementById('linejoin');
+    if (!canvas.getContext) return;
+    var ctx = canvas.getContext("2d");
+ 
+    var lineJoin = ['round', 'bevel', 'miter'];
+    ctx.lineWidth = 20;
+ 
+    for (var i = 0; i < lineJoin.length; i++){
+        ctx.lineJoin = lineJoin[i];
+        ctx.beginPath();
+        ctx.moveTo(50, 50 + i * 50);
+        ctx.lineTo(100, 100 + i * 50);
+        ctx.lineTo(150, 50 + i * 50);
+        ctx.lineTo(200, 100 + i * 50);
+        ctx.lineTo(250, 50 + i * 50);
+        ctx.stroke()
+        ctx.strokeStyle="blue";
+    }
+ 
+}
+draw();
+    </script>
+
+</head>
+
+<body onload="draw()">
+    <canvas id="linejoin" width="300" height="300"></canvas>
+</body>
+</html>
