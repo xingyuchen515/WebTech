@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+  <head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+	<title>Page title goes here</title>
+
+	<style>
+	#panel, #flip {
+    	padding: 5px;
+    	text-align: center;
+    	background-color: #e5eecc;
+    	border: solid 1px #c3c3c3;
+  	}
+
+  	#panel {
+    	padding: 50px;
+    	display: none;
+  	}
+  	.t1 {
+  	color:blue;font-style: italic;
+}
+	</style>
+	
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script>
+	$(function(){
+	   // jQuery methods go here...
+	 $("#hide").click(function(){$("tr:odd").hide()  });
+ 	 $("tr").click(function(){$(this).fadeOut(3000)});
+ 	 $("#show").click(function(){
+     $("tr").show();
+     $("tr:odd").css("backgroundColor","yellow");
+    });
+	});
+
+  $(document).ready(function(){
+    $("#flip").click(function(){
+      $("#panel").slideDown("slow");
+    });
+  });
+  $(document).ready(function(){
+  $("#btn1").click(function(){
+    alert("Text: " + $("#test").text());
+  });
+  $("#btn2").click(function(){
+    alert("HTML: " + $("#test").html());
+  });
+});
+$(document).ready(function(){
+  $("#btn3").click(function(){
+    $("#p2").append(" <b>This is an added paragraph at the end</b>.");
+  });
+  });
+  $(document).ready(function(){
+  $("#btn4").click(function(){
+    $("#p2").prepend("<b>This is an added paragraph at the beginning</b>. ");
+  });
+  });
+  $(document).ready(function(){
+  $("#btn5").click(function(){
+    $("#div1").empty();
+  });
+});
+$(document).ready(function(){
+  $("#btn6").click(function(){
+    $("#p4,#p5").toggleClass("t1");
+  });
+});
+$(document).ready(function(){
+  $("#btn7").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+$(document).ready(function(){
+  $("#btn8").click(function(){
+    $("#div2").delay("slow").fadeIn();
+    $("#div3").delay("fast").fadeIn();
+    $("#div4").delay(800).fadeIn();
+
+  });
+});
+	</script>
+  </head>
+
+  <body>
+	<div id="flip">click to slide down</div>
+  	<div id="panel">Hello, world!</div>
+	<table>
+		<tr><td>Row A</td></tr>
+		<tr><td>Row B</td></tr>
+		<tr><td>Row C</td></tr>
+		<tr><td>Row D</td></tr>
+	  </table>
+	  <button id="hide">Hide Odd</button>
+	  <button id="show">Show All</button>
+
+<p id="test"> This paragraph shows the <span style="color:plum">HTML</span></p>
+<button id="btn1">Show Text</button>
+<button id="btn2">Show HTML</button>
+<p id="p2">This is the pargraph for append and prepend.</p>
+<button id="btn3">Append text</button>
+<button id="btn4">Prepend text</button>
+<p id="p3">This is for DOM effect.</p>
+<div id="div1" style="height:120px;width:330px;border:1px solid black;background-color:lemonchiffon;">
+
+<p>This is a paragraph1.</p>
+<p>This is paragraph2.</p>
+
+</div>
+<button id="btn5">Empty the div element</button>
+<p id="p4">This is for Class effect.</p>
+<p id="p5">This is also for Class effect.</p>
+<button id="btn6">Toggle class</button>
+<p>This is for animation</p>
+<button id="btn7">Start Animation</button>
+<br>
+<br>
+<div style="background:peru;height:100px;width:100px;position:absolute;"></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p>This is for Delay effect.</p>
+<button id="btn8">Click button to fade in boxes with a delay</button>
+<br><br>
+<div id="div2" style="width:50px;height:90px;display:none;background-color:pink;"></div><br>
+<div id="div3" style="width:100px;height:90px;display:none;background-color:yellow;"></div><br>
+<div id="div4" style="width:150px;height:90px;display:none;background-color:pink;"></div><br>
+
+  </body>
+</html>
