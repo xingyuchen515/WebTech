@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="apple-touch-icon" sizes="128x128" href="cocobackground.jpg"/>
+    <link rel="icon" sizes="128x128" href="cocobackground.jpg" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>Go Explore The World of Movies</title>
+
+<style>
+    h1{text-align: center;font-family: sans-serif; font-size: 55px; font-style: normal; color: white;}
+    h2{text-align:right; padding-right:10px; font-family: Georgia; font-size: 20px; font-style: normal; color: rgba(255, 255, 255, 0.623);}
+    body {background-image:url("cocobackground.jpg"); background-size:cover; background-attachment:fixed;}
+    .moviename {font-style:italic;}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 33.5%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color:white; 
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family:inherit;
+    margin:0;
+}
+
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color:#333; 
+    text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+    <audio controls autoplay src="meet.mp3">
+    </audio>
+
+    <h1 style="line-height:5px; padding-top:20px;"> Explore The World of Movie </h1>
+<br>
+    <div class="navbar">
+        <a href="index.htm">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Comedy <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="comedy.htm">Overview</a>
+                <a href="comedy1.htm"><span class="moviename">The Steamboat Bill Jr.,</span></a>
+                <a href="comedy2.htm"><span class="moviename">The Sherlock Jr.,</span></a>
+                <a href="comedy3.htm"><span class="moviename">City Lights</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Romance <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="romance.htm">Overview</a>
+                <a href="romance1.htm"><span class="moviename">One Day</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Animated Movies <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="animated.htm">Overview</a>
+                <a href="animated1.htm"><span class="moviename">Coco</span></a>
+                <a href="animated2.htm"><span class="moviename">Boss Baby</span></a>
+            </div>
+        </div>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Me</a>
+    </div>
+    <br>
+    <h2> “EVERY TIME I GO TO A MOVIE, IT’S MAGIC, NO MATTER WHAT THE MOVIE’S ABOUT.”
+        - Steven Spielberg</h2>
+</body>
+</html>

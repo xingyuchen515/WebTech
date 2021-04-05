@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Lights</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
+<style>
+    h1{text-align: center;font-family: sans-serif; font-size: 55px; font-style: normal; color:#333;}
+    p {text-align: center; font-family:'Quicksand'; font-size:14pt; text-indent:20px; padding-top: 50pt; padding-left: 50pt; padding-right: 50pt; line-height: 50px;}
+    h2{text-align: center;font-family: sans-serif; font-size: 50px; font-style: normal; color:#333;}
+    body{background-color:rgba(220, 220, 220, 0.842);}
+    .moviename {font-style:italic;}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 33.5%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color:white; 
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family:inherit;
+    margin:0;
+}
+
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color:#333; 
+    text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+#btn1{margin-left:50%}
+#btn2{margin-left:50%}
+</style>
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#myp").append(" <b>!!!</b>");
+});
+});
+$(document).ready(function(){
+$("#btn2").click(function(){
+$("#myp").prepend("<b>Know more about - </b> ");
+});
+});
+</script>
+
+</head>
+<body>
+    <h1 style="line-height:5px; padding-top:20px;"> City Lights </h1>
+<br>
+    <div class="navbar">
+        <a href="index.htm">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Comedy <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="comedy.htm">Overview</a>
+                <a href="comedy1.htm"><span class="moviename">The Steamboat Bill Jr.,</span></a>
+                <a href="comedy2.htm"><span class="moviename">The Sherlock Jr.,</span></a>
+                <a href="comedy3.htm"><span class="moviename">City Lights</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Romance <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="romance.htm">Overview</a>
+                <a href="romance1.htm"><span class="moviename">One Day</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Animated Movies <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="animated.htm">Overview</a>
+                <a href="animated1.htm"><span class="moviename">Coco</span></a>
+                <a href="animated2.htm"><span class="moviename">Boss Baby</span></a>
+            </div>
+        </div>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Me</a>
+    </div>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b2NTUnujk1I" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p style="float: left"> <img src="comedy3.jpg" width=360 alt="Xingyu Chen" >                                       
+<br> <br>
+<p>A hapless but resilient tramp (Charlie Chaplin) falls in love with a blind flower girl (Virginia Cherrill) on the tough city streets. Upon learning that she and her grandmother are to be evicted from their home, the tramp undertakes a series of attempts to provide them with the money they need, all of which end in humiliating failure. But after a drunken millionaire (Harry Myers) lavishly rewards him for saving his life, the tramp can change the flower girl's life forever.</p>   
+<hr>
+<br>
+<button id="btn1">Append text</button>
+<button id="btn2">Prepend text</button>  
+<h2 id="myp" style="font-weight: bold; text-decoration: underline; padding-left:35%; padding-right:35%;">Charlie Chaplin</h2>
+<p style="float: right"> <img src="chaplin.jpg" width=360 alt="Charlie Chaplin" >     
+<br>
+<p style="font-weight:bold; color:brown;padding-left: 35%; padding-right:35%;font-family:sans-serif;">Who Was Charlie Chaplin?</p>
+  
+<p>Charlie Chaplin worked with a children's dance troupe before making his mark on the big screen. His character "The Tramp" relied on pantomime and quirky movements to become an iconic figure of the silent-film era. Chaplin went on to become a director, making films such as City Lights and Modern Times, and co-founded the United Artists Corporation.</p>
+<hr>
+<p style="font-weight:bold; color:brown; padding-left: 31%; padding-right:31%;font-family:sans-serif;">Review on <span style="font-style:italic;">City Lights</span></p>   
+<p>Charlie Chaplin establishes an identifiable comic persona, a kind-hearted but impoverished vagrant, sustained from one film to another. This comedian-comic figure does not qualify for the typical "star" qualities such as handsome looks or muscular bodies; and he even has some unordinary, quirky behaviors. In the film City Lights, the same character, the Tramp, is performed by Chaplin, and the film centers this character to develop the story. While the Tramp does not possess the conventional attractive traits as the ordinary main character, he has his own attractive characteristic, which is his goodwill to help others in need. The qualities and the living environment of the comedian character are manifested gradually in each scene.</p>
+
+<p>The scene I have chosen (0:03:00 – 0:05:00) displays the first appearance of the Tramp, who is sleeping on the new monument covering the cloth. This scene hints the audience about the identity of the Tramp: he has nowhere to sleep, and the covering cloth that can provide him some warmth is seemingly the right choice for him for sleep. Furthermore, this scene tells us about the attitudes that the public has toward the Tramp. The gathering citizens and governors all criticize the Tramp and expel him. He climbs down the statue, but the sword stabs his pants. The sword innuendoes the public's sharp attitudes, and the Tramp is playing a subordinate role in this society. When the national anthem rings out, the crowd all stands to attention and salutes, but the Tramp fails to follow their actions, although he attempts to do the same things as the public does. This implies that the Tramp is the outlier of the society. He gains no support from the government, the police, and the citizens. Chaplin uses comedic ways to portrait the social status of a vagrant in society ironically. The failure of the Tramp to follow others' behaviors also tells us that the inability of a vagrant to revolutionize the cruel society rules. Instead, he has to accept it and tries to fit in it. However, since he is unacceptable by the public, he is expelled like a clown. This scene is the insinuation of the primary social status and living environment of the centered comedian character, and it foreshadows the following stories that the Tramp will experience.</p>
+    
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview of Animated Films</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
+<style>
+    body{background-image: url("contactbackground.jpeg");background-size:cover; background-attachment:fixed; font-size: 20px; font-family: 'Quicksand'; text-align: center; margin-left:30pt; margin-right: 30pt; padding-bottom:20px;}
+    h1{text-align: center;font-family: sans-serif; font-size: 55px; font-style: normal; color: black;}
+    h2{text-align: center;font-style: normal;font-family: sans-serif; color: white; font-weight:bold; font-size:35px;}
+    p {text-align: center; font-family:'Quicksand'; font-size:14pt; text-indent:20px; padding-top: 50pt; padding-left: 50pt; padding-right: 50pt; line-height: 50px;}
+    .moviename {font-style:italic;}
+    .movie {font-style:italic;color:red; font-weight:bold;}
+    .images{padding-left: 38px; padding-bottom: 38px;}
+    .comment{color: deepskyblue;}
+    .moviename {font-style:italic;}
+    .container ul {
+        margin-right:auto;
+        margin-left:auto;
+        max-width:380px;
+        font-family: sans-serif;
+        line-height:30px;
+        text-indent:20px;
+    }
+
+    img{float:right;}
+
+    .navbar {
+    overflow: hidden;
+    background-color:#333;
+    padding-left: 33.5%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color:white; 
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family:inherit;
+    margin:0;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color:#333; 
+    text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+</style>
+
+<script>
+    function ChgToCoco()
+    {
+        document.getElementById("a").src="cocohotspot.jpg";
+    }
+    function ChgBack()
+    {
+        document.getElementById("a").src="animated.jpg";
+    }
+</script>
+
+</head>
+
+<body>
+<h1 style="line-height:5px; padding-top:35px;"> Overview of Animated Films </h1>
+
+<div class="navbar">
+    <a href="index.htm">Home</a>
+    <div class="subnav">
+        <button class="subnavbtn">Comedy <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="comedy.htm">Overview</a>
+            <a href="comedy1.htm"><span class="moviename">The Steamboat Bill Jr.,</span></a>
+            <a href="comedy2.htm"><span class="moviename">The Sherlock Jr.,</span></a>
+            <a href="comedy3.htm"><span class="moviename">City Lights</span></a>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Romance <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="romance.htm">Overview</a>
+            <a href="romance1.htm"><span class="moviename">One Day</span></a>
+        </div>
+    </div>      
+    <div class="subnav">
+        <button class="subnavbtn">Animated Movies <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="animated.htm">Overview</a>
+            <a href="animated1.htm"><span class="moviename">Coco</span></a>
+            <a href="animated2.htm"><span class="moviename">Boss Baby</span></a>
+        </div>
+    </div>
+    <a href="aboutme.htm">About Me</a>
+    <a href="contact.htm">Contact Me</a>
+</div>
+<br>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xdOgym7MLAU" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>The above video is the trailer of Nezha, which is the top 1 animated film in China.</p>
+<br>
+<hr>
+<h2 style="font-weight: bold; text-decoration: underline; padding-left:35%; padding-right:35%;">Overview</h2>
+<p style="float: right"> <img id="a" onmouseover="ChgToCoco()" onmouseout="ChgBack()" src="animated.jpg" width=480 alt="The Disney World" >  
+    <br>
+<p>Animated Films are ones in which individual drawings, paintings, or illustrations are photographed frame by frame (stop-frame cinematography). Usually, each frame differs slightly from the one preceding it, giving the illusion of movement when frames are projected in rapid succession at 24 frames per second. The earliest cinema animation was composed of frame-by-frame, hand-drawn images. When combined with movement, the illustrator's two-dimensional static art came alive and created pure and imaginative cinematic images - animals and other inanimate objects could become evil villains or heroes.
+
+    Animations are not a strictly-defined genre category, but rather a film technique, although they often contain genre-like elements. Animation, fairy tales, and stop-motion films often appeal to children, but it would marginalize animations to view them only as "children's entertainment." Animated films are often directed to, or appeal most to children, but easily can be enjoyed by all.</p>
+<hr>
+<br>
+<h2>Here is the recommendation list of my favorite animated films!</h2>
+<div class="container">
+<ul>
+    <li>Disney Animated Films
+<ul><li><a href="animated1.htm" target="_blank" style="color:black">Coco</a></li></ul>
+<ul><li>The Frozen</li></ul>
+<ul><li>The Nutcracker and the Four Realms</li></ul>
+</li>
+    <li>20th Century Fox
+<ul><li><a href="animated2.htm" target="_blank" style="color:black">Baby Boss</a></li></ul>
+</li>
+</ul> 
+</div>
+</body>
+</html>

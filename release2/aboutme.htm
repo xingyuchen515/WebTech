@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <title>About Me</title>
+<style>
+    h1{text-align: center;font-family: sans-serif; font-size: 55px; font-style: normal; color:#333;}
+    p {text-align: center; font-family:'Caveat'; font-size:20pt; text-indent:20px; padding-top: 50pt; padding-left: 50pt; padding-right: 50pt; line-height: 50px;}
+    .moviename {font-style:italic;}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    padding-left: 33.5%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color:white; 
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family:inherit;
+    margin:0;
+}
+
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color:#333; 
+    text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+</style>
+
+<script>
+    var colorList=new Array("red","orange","yellow","green","blue","indigo","violet")
+    var counter=0
+    function ChgColor()
+    {
+        document.getElementById("myh1").style.color=colorList[counter]
+        counter=counter+1
+        if(counter==colorList.length)
+        {
+            counter=0
+        }
+        setTimeout("ChgColor()",500)
+    }
+</script>
+</head>
+
+<body onload="ChgColor()">
+    <h1 id="myh1" style="line-height:5px; padding-top:20px;"> About Me </h1>
+<br>
+    <div class="navbar">
+        <a href="index.htm">Home</a>
+        <div class="subnav">
+            <button class="subnavbtn">Comedy <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="comedy.htm">Overview</a>
+                <a href="comedy1.htm"><span class="moviename">The Steamboat Bill Jr.,</span></a>
+                <a href="comedy2.htm"><span class="moviename">The Sherlock Jr.,</span></a>
+                <a href="comedy3.htm"><span class="moviename">City Lights</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Romance <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="romance.htm">Overview</a>
+                <a href="romance1.htm"><span class="moviename">One Day</span></a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Animated Movies <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="animated.htm">Overview</a>
+                <a href="animated1.htm"><span class="moviename">Coco</span></a>
+                <a href="animated2.htm"><span class="moviename">Boss Baby</span></a>
+            </div>
+        </div>
+        <a href="aboutme.htm">About Me</a>
+        <a href="contact.htm">Contact Me</a>
+    </div>
+
+<p style="float: left"> <img src="myself.jpeg" width=360 alt="Xingyu Chen" >                                       
+<br> <br>
+<p>My name is Xingyu Chen, an undergraduate student at Babson College. I am majoring in accounting. Last semester, I took a class named "Comic Form in Film." This class enables me to deeply learn the history, development, and techniques of comic forms. Previously I assumed that comic forms can only used in comedy, but after I took that class, I realized that comic forms can be used in romance, animated films, even thrillers. This finding inspired me to watch more genres of movies to see whether comic forms are applied and to watch the movies in different perspectives.</p>
+    
+</body>
+</html>

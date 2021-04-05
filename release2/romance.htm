@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview of Romance</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
+    function ChgText()
+    {
+        document.getElementById("a").innerHTML="Romantic Movies";
+        document.getElementById("b").style.color="red";
+    }
+
+$(document).ready(function(){
+$("#btn").click(function(){
+$("#myp").toggleClass("t1");
+});
+});
+</script>    
+
+<style>
+    body{background-color: mistyrose; background-attachment: fixed; font-size: 20px; font-family: 'Quicksand'; text-align: center; margin-left:30pt; margin-right: 30pt;}
+    h1{text-align: center;font-family: 'Caveat'; font-size: 55px; font-style: normal; color: black;}
+    .moviename {font-style:italic;}
+    .movie {font-style:italic;color:red; font-weight:bold;}
+    .images{padding-left: 38px; padding-bottom: 38px;}
+    .moviename {font-style:italic;}
+
+    .navbar {
+    overflow: hidden;
+    background-color:#333;
+    padding-left: 33.5%;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+
+.subnav .subnavbtn {
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    outline: none;
+    color:white; 
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family:inherit;
+    margin:0;
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    background-color:white;
+    z-index: 1;
+}
+
+.subnav-content a {
+    float: left;
+    color:#333; 
+    text-decoration: none;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+}
+
+.t1 {
+  	color:blue;font-style: italic;
+
+</style>
+
+</head>
+
+<body>
+<h1 id="b" onclick="ChgText()" style="line-height:5px; padding-top:35px;"> Overview of <span id="a">Romance</span> </h1>
+
+<div class="navbar">
+    <a href="index.htm">Home</a>
+    <div class="subnav">
+        <button class="subnavbtn">Comedy <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="comedy.htm">Overview</a>
+            <a href="comedy1.htm"><span class="moviename">The Steamboat Bill Jr.,</span></a>
+            <a href="comedy2.htm"><span class="moviename">The Sherlock Jr.,</span></a>
+            <a href="comedy3.htm"><span class="moviename">City Lights</span></a>
+        </div>
+    </div>
+    <div class="subnav">
+        <button class="subnavbtn">Romance <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="romance.htm">Overview</a>
+            <a href="romance1.htm"><span class="moviename">One Day</span></a>
+        </div>
+    </div>      
+    <div class="subnav">
+        <button class="subnavbtn">Animated Movies <i class="fa fa-caret-down"></i></button>
+        <div class="subnav-content">
+            <a href="animated.htm">Overview</a>
+            <a href="animated1.htm"><span class="moviename">Coco</span></a>
+            <a href="animated2.htm"><span class="moviename">Boss Baby</span></a>
+        </div>
+    </div>
+    <a href="aboutme.htm">About Me</a>
+    <a href="contact.htm">Contact Me</a>
+</div>
+<br>
+<img src="romance.jpg" alt="Romantic Love" width="800" />
+<p>Romance films or romance movies are romantic love stories recorded in visual media for broadcast in theaters and on TV that focus on passion, emotion, and the affectionate romantic involvement of the main characters and the journey that their love takes them through dating, courtship or marriage. Romance films make the romantic love story or the search for strong and pure love and romance the main plot focus. Occasionally, romance lovers face obstacles such as finances, physical illness, various forms of discrimination, psychological restraints or family that threaten to break their union of love. As in all quite strong, deep, and close romantic relationships, tensions of day-to-day life, temptations (of infidelity), and differences in compatibility enter into the plots of romantic films.</p>
+<br>
+<hr>
+<br>
+<p id="myp">Romance films have been popular in my country when I was super young. I've watched lots of romance films produced by different countries, including China, Korea, USA, UK, Japan, Thailand, Norway and etc. My favorite romance is <span class="movie">One Day</span> performed by Anne Hathaway.</p>
+<br>
+<button id="btn">Let's change this paragraph to become blue!</button>
+<div class="images">
+    <a href="romance1.htm"><img src="oneday.jpg" alt="One Day" width="800"></a>
+</div>
+
+
+</body>
+</html>
